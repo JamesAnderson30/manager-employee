@@ -8,7 +8,18 @@ class Employee{
         if(manager){
             manager.addEmployee(this);
         }
+
     }
+
+    calculateBonus(multiplier){
+        if(this instanceof Employee){
+            return this.salary * multiplier
+        } else if (this instanceof Manager){
+
+        }
+
+    }
+
 }
 
 module.exports = Employee
